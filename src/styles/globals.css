@@ -1,0 +1,36 @@
+body {
+  background: #263238;
+  margin: 2em 4em;
+  color: white;
+}
+
+.MuiInputBase-root {
+  color: #212121 !important;
+  background: #fafafa;
+  border-radius: 0.3em;
+}
+
+.loader {
+  display: block;
+  width: 7em;
+  height: 7em;
+  margin: 0 auto;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
